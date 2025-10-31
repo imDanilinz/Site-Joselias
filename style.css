@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Reset básico para margem e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e cor base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Container central */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 15px;
+	
+	
+}
+
+/* Cabeçalho */
+header {
+    background-color:#008785;
+    color: #ecf0f1;
+    padding: 25px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color:#13BF81;
+}
+
+/* Seções */
+section {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #34495e;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 8px;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+ul li, ol li {
+    margin-bottom: 8px;
+}
+
+/* Parágrafos */
+p {
+    margin-top: 12px;
+}
+
+/* Citação */
+blockquote {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 4px solid #1abc9c;
+    font-style: italic;
+    color: #555;
+    background-color: #f0f9f8;
+    border-radius: 4px;
+}
+
+/* Rodapé */
+footer {
+    background-color:#008785;
+    color:#FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.container-img {
+    margin-top: 5%;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+}
